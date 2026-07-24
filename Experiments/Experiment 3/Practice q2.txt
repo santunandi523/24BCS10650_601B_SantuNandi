@@ -1,0 +1,3 @@
+select Department,SUM(case when Marks>80 then 1 else 0 END)as Dept_HighScore_Count from 
+
+Student group by Department
