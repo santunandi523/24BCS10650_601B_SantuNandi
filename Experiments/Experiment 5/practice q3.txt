@@ -1,0 +1,23 @@
+
+
+Do $$
+
+	DECLARE
+	 Age Int:=9;
+	 Num Int:=18;
+
+	BEGIN
+
+		if Age>10 AND Age<17 then
+		RAISE NOTICE 'Wait for % Year To Get Eligible',Num-Age;
+		
+		elseif Age<10 then 
+		RAISE NOTICE 'Your age is % ,under 10',Age;
+		else
+		Raise Notice 'Your Age Is % And You Are Eligible to Vote',Age;
+		
+		END IF;
+
+	END;
+
+$$
